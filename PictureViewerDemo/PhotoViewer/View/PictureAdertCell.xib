@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PictureAdertCell">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3M-78-Msu">
+                        <rect key="frame" x="314" y="58.5" width="172.5" height="183"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ksc_album_ad_lable" translatesAutoresizingMaskIntoConstraints="NO" id="dvd-dT-fYe">
+                                <rect key="frame" x="15" y="13" width="32" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="6Ko-jn-I4A"/>
+                                    <constraint firstAttribute="width" constant="32" id="iWq-zZ-i0G"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vOt-gf-4mI">
+                                <rect key="frame" x="0.0" y="43" width="172.5" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vOt-gf-4mI" secondAttribute="height" multiplier="16:9" id="XOW-Cv-qVJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myJ-EG-By6">
+                                <rect key="frame" x="57" y="0.0" width="37.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="configText" value="T4"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV4-pm-VhU">
+                                <rect key="frame" x="15" y="140" width="37.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="configText" value="T2"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPc-z8-3Hk">
+                                <rect key="frame" x="56.5" y="148" width="101" height="26"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ksc_album_ad_download_ic" translatesAutoresizingMaskIntoConstraints="NO" id="JjC-Zz-kwA">
+                                        <rect key="frame" x="10" y="6" width="14" height="14"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即下载" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNd-Wp-MeR">
+                                        <rect key="frame" x="31" y="4" width="62" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vNd-Wp-MeR" firstAttribute="centerY" secondItem="gPc-z8-3Hk" secondAttribute="centerY" id="Jjc-As-6MH"/>
+                                    <constraint firstItem="JjC-Zz-kwA" firstAttribute="centerY" secondItem="gPc-z8-3Hk" secondAttribute="centerY" id="Mtr-zi-Y1a"/>
+                                    <constraint firstItem="vNd-Wp-MeR" firstAttribute="leading" secondItem="JjC-Zz-kwA" secondAttribute="trailing" constant="7" id="goe-Gs-Cz7"/>
+                                    <constraint firstAttribute="width" constant="101" id="iGm-bj-zk7"/>
+                                    <constraint firstAttribute="height" constant="26" id="igN-dz-z65"/>
+                                    <constraint firstItem="JjC-Zz-kwA" firstAttribute="leading" secondItem="gPc-z8-3Hk" secondAttribute="leading" constant="10" id="qTs-he-5aN"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vNd-Wp-MeR" secondAttribute="trailing" constant="6" id="vys-30-HFh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dvd-dT-fYe" firstAttribute="centerY" secondItem="myJ-EG-By6" secondAttribute="centerY" id="02a-tK-RVk"/>
+                            <constraint firstItem="uV4-pm-VhU" firstAttribute="top" secondItem="vOt-gf-4mI" secondAttribute="bottom" id="9l2-LH-wPI"/>
+                            <constraint firstItem="myJ-EG-By6" firstAttribute="leading" secondItem="dvd-dT-fYe" secondAttribute="trailing" constant="10" id="AJB-jJ-vda"/>
+                            <constraint firstItem="myJ-EG-By6" firstAttribute="top" secondItem="X3M-78-Msu" secondAttribute="top" id="DSJ-aS-26F"/>
+                            <constraint firstItem="vOt-gf-4mI" firstAttribute="top" secondItem="myJ-EG-By6" secondAttribute="bottom" id="G20-K8-dOx"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="myJ-EG-By6" secondAttribute="trailing" id="KpP-nt-10c"/>
+                            <constraint firstAttribute="trailing" secondItem="vOt-gf-4mI" secondAttribute="trailing" id="Pyn-vm-nTT"/>
+                            <constraint firstItem="vOt-gf-4mI" firstAttribute="leading" secondItem="X3M-78-Msu" secondAttribute="leading" id="Rcu-jX-GPI"/>
+                            <constraint firstItem="uV4-pm-VhU" firstAttribute="leading" secondItem="X3M-78-Msu" secondAttribute="leading" constant="15" id="SYH-OJ-WlA"/>
+                            <constraint firstAttribute="bottom" secondItem="uV4-pm-VhU" secondAttribute="bottom" id="bPn-A5-0eZ"/>
+                            <constraint firstAttribute="bottom" secondItem="vOt-gf-4mI" secondAttribute="bottom" constant="43" id="blT-ni-tfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="uV4-pm-VhU" secondAttribute="trailing" constant="120" id="doZ-Yi-l8Z"/>
+                            <constraint firstItem="dvd-dT-fYe" firstAttribute="leading" secondItem="X3M-78-Msu" secondAttribute="leading" constant="15" id="lmy-9a-dU0"/>
+                            <constraint firstItem="vOt-gf-4mI" firstAttribute="top" secondItem="X3M-78-Msu" secondAttribute="top" constant="43" id="oug-AO-Wbc"/>
+                            <constraint firstAttribute="trailing" secondItem="gPc-z8-3Hk" secondAttribute="trailing" constant="15" id="r2h-jc-rWY"/>
+                            <constraint firstItem="gPc-z8-3Hk" firstAttribute="centerY" secondItem="uV4-pm-VhU" secondAttribute="centerY" id="rVu-GX-esA"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="420" id="uER-AZ-tdB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="configBackground" value="B29"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ksc_album_ad_left_slip_ic" translatesAutoresizingMaskIntoConstraints="NO" id="Mss-ly-KfB">
+                        <rect key="frame" x="15" y="271" width="14" height="13"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="左滑浏览相关图集" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zww-Tk-gOg">
+                        <rect key="frame" x="39" y="268" width="122.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="configText" value="T4"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="X3M-78-Msu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" id="672-kf-Sxr"/>
+                <constraint firstAttribute="bottom" secondItem="Zww-Tk-gOg" secondAttribute="bottom" constant="14" id="8NI-d7-1X8"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zww-Tk-gOg" secondAttribute="trailing" constant="15" id="LN9-b5-QnC"/>
+                <constraint firstItem="X3M-78-Msu" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="LON-0P-tMl"/>
+                <constraint firstItem="Mss-ly-KfB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="NOA-qy-VKy"/>
+                <constraint firstItem="Mss-ly-KfB" firstAttribute="centerY" secondItem="Zww-Tk-gOg" secondAttribute="centerY" id="bMT-fc-NdZ"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X3M-78-Msu" secondAttribute="trailing" id="cju-fs-fhE"/>
+                <constraint firstItem="Zww-Tk-gOg" firstAttribute="leading" secondItem="Mss-ly-KfB" secondAttribute="trailing" constant="10" id="kjj-i3-XIx"/>
+                <constraint firstItem="X3M-78-Msu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pwD-Sr-KW6"/>
+            </constraints>
+            <size key="customSize" width="431" height="576"/>
+            <connections>
+                <outlet property="advertBackgroundView" destination="X3M-78-Msu" id="87P-pW-7E2"/>
+                <outlet property="contentLabel" destination="uV4-pm-VhU" id="lAO-Az-x75"/>
+                <outlet property="coverImage" destination="vOt-gf-4mI" id="XJa-6S-Tjg"/>
+                <outlet property="downloadBgView" destination="gPc-z8-3Hk" id="Cqj-aJ-DiI"/>
+                <outlet property="nextDynamicPicturesPromatLabel" destination="Zww-Tk-gOg" id="laU-LK-fcA"/>
+                <outlet property="promatImageView" destination="Mss-ly-KfB" id="t1p-Yx-BSj"/>
+                <outlet property="titleLabel" destination="myJ-EG-By6" id="SPc-qr-DCG"/>
+            </connections>
+            <point key="canvasLocation" x="-43.5" y="39"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ksc_album_ad_download_ic" width="14" height="14"/>
+        <image name="ksc_album_ad_lable" width="32" height="17"/>
+        <image name="ksc_album_ad_left_slip_ic" width="14" height="13"/>
+    </resources>
+</document>
