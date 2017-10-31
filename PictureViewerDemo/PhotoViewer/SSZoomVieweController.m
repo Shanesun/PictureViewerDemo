@@ -80,14 +80,14 @@
 
 - (void)caluZoomScaleWithSize:(CGSize)size
 {
-    // 满足宽度优先。
+    // 1 宽度填满 高度等比。
     self.currentZoomScale = size.width/self.gifPlayerView.orignSize.width;
     if (isnan(self.currentZoomScale) || isinf(self.currentZoomScale)) {
         self.currentZoomScale = 1;
     }
     
-    // fit模式
-//    float minZoom = MIN(scrollViewBounds.size.width / image.size.width,
+    // 2 fillFit
+//    self.currentZoomScale = MIN(scrollViewBounds.size.width / image.size.width,
 //                        scrollViewBounds.size.height / image.size.height);
 
     self.scrollView.minimumZoomScale = self.currentZoomScale;

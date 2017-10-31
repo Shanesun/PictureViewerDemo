@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PictureViewerViewController.h"
+
+typedef NS_ENUM(NSUInteger, PictureShowModel) {
+    PictureShowModelWidthFirst,
+    PictureShowModelFillFit,
+};
 
 @interface PictureZoomViewController : UIViewController
+
+@property (assign, nonatomic) PictureShowModel pictureShowModel;
+@property (strong, nonatomic) PictureData *data;
 
 @end
